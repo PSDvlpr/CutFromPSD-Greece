@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Streetwear';
+    src: url('../../fonts/Streetwear.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Molle';
+    src: url('../../fonts/Molle-Regular.ttf') format('truetype');
+}
+
+$ff-ss: 'Roboto', sans-serif;
+$ff-str: 'Streetwear';
+$ff-mll: 'Molle';
+
+$fw-thin: 100;
+$fw-regular: 400;
+$fw-bold: 700;
+$fw-black: 900;
