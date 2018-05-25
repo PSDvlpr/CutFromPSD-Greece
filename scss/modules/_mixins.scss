@@ -5,3 +5,9 @@ $breakpoints: ( 'medium': 768px, 'medium-large': 896px, 'rwd-timeline': 1000px, 
         @content;
     }
 }
+
+@mixin container {
+    max-width: 100em;
+    margin: 0 auto;
+    width: 90%;
+}
