@@ -3,7 +3,6 @@ body {
     font-family: $ff-ss;
     font-size: .875rem;
     box-sizing: border-box;
-    line-height: 1;
 
     @include respond-to(medium) {
         font-size: 1rem;
@@ -13,14 +12,32 @@ body {
 
 h1, h2, h3, h4, p {
     margin-top: 0;
-    margin-bottom: 1em;
 }
 
 h1 {
     color: $blue;
-    font-size: 1.7rem;
+    font-size: 3rem;
     text-align: center;
     font-family: $ff-mll;
+    margin-bottom: .314em;
+
+    span {
+        font-family: $ff-ss;
+        font-weight: $fw-regular;
+        display: block;
+        text-align: center;
+        font-size: .6rem;
+        text-transform: uppercase;
+        letter-spacing: .3em;
+
+        @include respond-to(medium) {
+            font-size: 1rem;
+        }
+    }
+
+    @include respond-to(medium) {
+        font-size: 10.38rem;
+    }
 }
 
 h2 {
@@ -29,6 +46,21 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-weight: $fw-regular;
+}
+
+.button {
+    background-color: $white;
+    border: none;
+    color: $blue;
+    width: 11.688em;
+    height: 3.250em;
+    border-radius: 5.875em;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        background-color: $blue;
+        color: $white;
+    }
 }
 
 img {
