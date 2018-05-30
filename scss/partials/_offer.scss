@@ -1,0 +1,58 @@
+.offer {
+    padding: 5em .5em 4.375em;
+    background-color: $background;
+}
+
+.offer-items {
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(medium) {
+
+        @include container;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.offer-item {
+    margin-bottom: 3.438em;
+    background-color: $white;
+}
+
+.offer-details {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.875em 1.563em 3.125em 1.875em;
+
+    i {
+        margin-top: 1em;
+        color: #ffce23;
+    }
+
+    p {
+        font-size: 2.250em;
+        font-weight: $fw-thin;
+        color: $gray;
+        display: block;
+        text-align: center;
+        line-height: .7;
+
+        span {
+            font-size: 0.389em;
+            font-weight: $fw-regular;
+            opacity: .3;
+        }
+    }
+}
+
+.offer-button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -30%;
+    box-shadow: 0 0 65px rgba(163, 163, 163, 0.25);
+}
