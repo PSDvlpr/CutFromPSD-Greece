@@ -1,0 +1,82 @@
+.carousel {
+    padding-top: 1.875em;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.list-ele {
+    width: 10000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    float: left;
+}
+
+.el1, .el2, .el3 {
+    background-image: url('../../images/carousel-1.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.item-title {
+    @include container($m-w: 11.419em);
+
+    font-size: 4.625rem;
+    font-weight: $fw-black;
+    color: $white;
+    margin-bottom: 0;
+    line-height: 1.378em;
+    padding-top: 4em;
+    margin-bottom: 1.257em;
+
+    span {
+        font-family: $ff-mll;
+        color: #0dcfff;
+        font-size: 4.688rem;
+        font-weight: $fw-thin;
+    }
+}
+
+.item-desc {
+    @include container($m-w: 46.944em);
+    font-size: 1.125rem;
+    color: $white;
+    line-height: 2.667em;
+    margin-bottom: 2em;
+}
+
+.item-autor {
+    color: $white;
+    font-weight: $fw-bold;
+    padding-bottom: 18.111em;
+}
+
+.arrows {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 94px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}

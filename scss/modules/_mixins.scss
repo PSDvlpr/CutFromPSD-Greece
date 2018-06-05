@@ -6,8 +6,8 @@ $breakpoints: ( 'medium': 768px, 'medium-large': 896px, 'rwd-timeline': 1000px, 
     }
 }
 
-@mixin container {
-    max-width: 100em;
+@mixin container($m-w: 100em) {
+    max-width: $m-w;
     margin: 0 auto;
     width: 90%;
 }
