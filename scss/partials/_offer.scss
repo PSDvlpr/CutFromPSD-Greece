@@ -9,7 +9,7 @@
 
     @include respond-to(medium) {
 
-        @include container;
+        // @include container;
 
         flex-direction: row;
         flex-wrap: wrap;
@@ -21,6 +21,7 @@
     margin-bottom: 3.438em;
     background-color: $white;
     box-shadow: 0 0 65px rgba(163, 163, 163, 0.25);
+    // max-width: 23.125em;
 }
 
 .offer-details {
