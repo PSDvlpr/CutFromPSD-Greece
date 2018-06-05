@@ -1,8 +1,8 @@
 .gallery {
-    padding: 4.938em .1em;
+    padding: 4.938em .5em 1.875em;
 
     @include respond-to(medium) {
-        padding: 4.938em 0;
+        padding: 4.938em 0 1.875em;
     }
 }
 
@@ -12,7 +12,7 @@
     grid-gap: .1em;
 
     @include respond-to(medium) {
-    grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.6fr 1.6fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr) .7fr .7fr;
     grid-gap: 1em;
     }
@@ -27,7 +27,7 @@
     }
 
     img {
-        display: block;
+        max-height: 100%;
     }
 }
 
