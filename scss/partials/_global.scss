@@ -7,7 +7,7 @@ body {
 
     @include respond-to(medium) {
         font-size: 1rem;
-        padding: 1em;
+        padding: 1em 1em 0 1em;
     }
 }
 
