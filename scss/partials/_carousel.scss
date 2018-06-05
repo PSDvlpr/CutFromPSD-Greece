@@ -5,39 +5,47 @@
 .jcarousel {
     position: relative;
     overflow: hidden;
+    background-image: url('../../images/carousel-1.png');
+    background-size: cover;
+    background-position: center;
 }
 
-.list-ele {
-    width: 10000em;
+.list {
+    // width: 10000em;
     position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+
 }
 
 .item {
     float: left;
 }
 
-.el1, .el2, .el3 {
-    background-image: url('../../images/carousel-1.png');
-    background-size: cover;
-    background-position: center;
+.el1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    box-sizing: border-box;
-    width: 100vw;
+    padding: 4em 0 4em;
 }
 
 .item-title {
     @include container($m-w: 11.419em);
 
-    font-size: 4.625rem;
+    font-size: 2.5rem;
     font-weight: $fw-black;
     color: $white;
     margin-bottom: 0;
     line-height: 1.378em;
-    padding-top: 4em;
     margin-bottom: 1.257em;
+
+    @include respond-to(medium) {
+        font-size: 4.625rem;
+    }
 
     span {
         font-family: $ff-mll;
@@ -49,16 +57,20 @@
 
 .item-desc {
     @include container($m-w: 46.944em);
-    font-size: 1.125rem;
+
+    font-size: .875rem;
     color: $white;
     line-height: 2.667em;
     margin-bottom: 2em;
+
+    @include respond-to(medium) {
+        font-size: 1.125rem;
+    }
 }
 
 .item-autor {
     color: $white;
     font-weight: $fw-bold;
-    padding-bottom: 18.111em;
 }
 
 .arrows {
@@ -73,6 +85,14 @@
     text-align: center;
     color: $white;
     text-decoration: none;
+
+    i {
+        display: none;
+
+        @include respond-to(medium) {
+            display: block;
+        }
+    }
 }
 .left {
     left: 0;
