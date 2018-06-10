@@ -9,7 +9,7 @@
         top: 70px;
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-        transition: background 2s;
+        transition: all 1.5s;
     }
 }
 
