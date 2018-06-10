@@ -4,6 +4,7 @@
     width: 100%;
     justify-self: flex-start;
     z-index: 999;
+    background: $white;
 
     @include respond-to(medium) {
         top: 70px;
