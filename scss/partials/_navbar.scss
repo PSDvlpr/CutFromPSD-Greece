@@ -6,9 +6,18 @@
     z-index: 999;
 
     @include respond-to(medium) {
-        top: 90px;
+        top: 70px;
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        transition: background 2s;
+    }
+}
+
+.navigation-background {
+    @include respond-to(medium) {
+    background: $white;
+    height: 100px;
+    top: 0;
     }
 }
 
@@ -19,7 +28,14 @@
     @include respond-to(medium) {
         grid-column: 2 / span 1;
         line-height: 1.5;
+        transition: all 1000ms;
     }
+}
+
+.bigger-logo {
+    transform: scale(1.5);
+    line-height: 3;
+    transition: all 1000ms;
 }
 
 .nav-toggle {
