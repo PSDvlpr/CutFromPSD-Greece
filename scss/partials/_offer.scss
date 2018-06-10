@@ -13,7 +13,7 @@
 
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 
@@ -21,7 +21,11 @@
     margin-bottom: 3.438em;
     background-color: $white;
     box-shadow: 0 0 65px rgba(163, 163, 163, 0.25);
-    // max-width: 23.125em;
+    max-width: 370px;
+
+    img {
+        max-height: 310px;
+    }
 }
 
 .offer-details {
