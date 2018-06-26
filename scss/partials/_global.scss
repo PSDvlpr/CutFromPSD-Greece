@@ -1,8 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: #ffffff;
     font-family: $ff-ss;
     font-size: .875rem;
-    box-sizing: border-box;
     overflow-x: hidden;
 
     @include respond-to(medium) {

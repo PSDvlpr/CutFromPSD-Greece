@@ -17,7 +17,6 @@
 .navigation-background {
     @include respond-to(medium) {
     background: $white;
-    height: 100px;
     top: 0;
     }
 }
